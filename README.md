@@ -40,6 +40,7 @@ The following are the basic methods for exploiting a system with the Framework:
 
 ## The Metasploit architecture
 Metasploit architecture is composed of many important components including tools, libraries, modules, and user interfaces. To fully use the power of Metasploit, many components are required. In the following section different components of Metasploit architecture is presented. 
+![Metasploit Architecture](images/Archi.png)
 
 ### Tools:
 This is a set of useful command-line utilities
@@ -82,7 +83,57 @@ Unlike exploit modules, auxiliary modules do not require the use of a payload to
 
 ## Exploit Demonstration using Virtual Box
 
-![]
+
+In this section we present few ways to attack a remote target. The main purpose of the VMware Workstation is to install Kali linux and Metasploitable 2 as virtual machines. With Kali Linux in Virtual Box, we present several attackes on Metasploitable operating system. Here, We have used MSFconsole for attacking the target machine.
+
+**Metasploitable** is essentially a penetration testing lab in a box, available as a VMware virtual machine (VMX) based on Linux that contains several intentional vulnerabilities for you to exploit. With Metasploit, we can use ready-made or custom code and introduce it into a network to probe for weak spots. 
+With the Metasploit framework installed in a system, an authorized penetration tester can utilize the Metasploit framework's tools to exploit vulnerabilities in a remote system.
+
+First we need to identify the open Network Services on virtual machine using the Nmap Security Scanner. 
+
+![Metasploit Architecture](images/nmap.JPG)
+
+### Exploiting Apache_Tomcat
+In this part, we try to attack the Apache Tomcat Web server in order to gain administrative’s credentials to gain access to the remote system. 
+First step is to  open metasploit framework and to search for specific modules about the Apache Tomcat by using the command search Tomcat.
+
+![](images/tomcat1-search.JPG)
+
+The Metasploit framework has a amodule  that can be used to launch a payload on Apache Tomcat servers called 
+Tomcat manager uploads which address issues about authenticated code execution. We can use that to get a Meterpreter session. Based on what has been said, for explotation we used " exploit/multi/http/tomcat_mgr_upload "
+
+
+![](images/tomcat2-use2.JPG)
+
+The credentials is set to defalt which is tomcat, the port is set to  8180 instead of port 80 because this is the port that the Apache Tomcat is running. RHOST is set to 192.168.56.102 which is the IP address of remote hoset. Then we run the exploit. The exploit is uploading the payload and then it tries to execute JSP application. 
+
+
+![](images/tomcat3-exploit.JPG)
+
+
+
+The exploit works and now we have a shell on the remote target.
+
+### Exploiting FTP Server
+
+FTP is a file transfer protocol that is often used by Webmasters to access files remotely. 
+The first thing that we need to is to identify which systems are running the FTP service. We run a scan with Nmap to find open ports. 
+
+![](images/nmap-ftp.jpg)
+
+As it can be seen a FTP server is running on port 21. 
+VSFTPD stands for very secure FTP daemon. It’s a stable, lightweight and secure FTP server for UNIX-like systems.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

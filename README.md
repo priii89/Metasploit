@@ -91,7 +91,7 @@ With the Metasploit framework installed in a system, an authorized penetration t
 
 First we need to identify the open Network Services on virtual machine using the Nmap Security Scanner. 
 
-![Metasploit Architecture](images/nmap.JPG)
+![](images/nmap.JPG)
 
 ### Exploiting Apache_Tomcat
 In this part, we try to attack the Apache Tomcat Web server in order to gain administrative’s credentials to gain access to the remote system. 
@@ -121,8 +121,9 @@ The first thing that we need to is to identify which systems are running the FTP
 
 ![](images/nmap-ftp.jpg)
 
-As it can be seen a FTP server is running on port 21. 
+As it can be seen that a FTP server is running on port 21. 
 VSFTPD stands for very secure FTP daemon. It’s a stable, lightweight and secure FTP server for UNIX-like systems.
+Then we run 
 
 
 

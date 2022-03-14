@@ -13,7 +13,8 @@ H D Moore, a network security professional, founded the Metasploit Project in th
 
 ## Who Uses Metasploit
 
-Metasploit is utilized by everyone from development, security and operation pros to hackers because of its vast range of uses and open-source availability. It's handy for everyone who needs a straightforward, dependable solution that works across platforms and languages. Cybercrime and cyber-attacks are very widespread these days. Hackers are constantly on the lookout for methods to disrupt a network or engage in other illegal actions. They attack and retrieve sensitive information once they find a loophole in a network or server, causing a problem for the organization, government, or country. The Metasploit framework is used to address these difficulties. The Metasploit framework can quickly detect a network's or server's weak spots. Following the identification, it is simple to document, and once documented, the organization or government can act on the weak places and remedy them before an attack occurs. This is an extremely important framework for businesses, organizations, and governments to save critical data.
+Metasploit is utilized by everyone from development, security and operation pros to hackers because of its vast range of uses and open-source availability. It's handy for everyone who needs a straightforward, dependable solution that works across platforms and languages. Cybercrime and cyber-attacks are very widespread these days. Hackers are constantly on the lookout for methods to disrupt a network or engage in other illegal actions. They attack and retrieve sensitive information once they find a loophole in a network or server, causing a problem for the organization, government, or country. The Metasploit framework is used to address these difficulties. The Metasploit framework can quickly detect a network's or server's weak spots. Following the identification, it is simple to document, and once documented, the organization or government can act on the weak places and remedy them before an attack occurs. This is an extremely important framework for businesses, organizations, and governments to save critical data.[^3]
+[^3]:(https://www.varonis.com/blog/what-is-metasploit)
 
 ## Reasons to use Metasploit
 
@@ -39,8 +40,12 @@ The following are the basic methods for exploiting a system with the Framework:
 5. Executing an exploit
 
 ## The Metasploit architecture
-Metasploit architecture is composed of many important components including tools, libraries, modules, and user interfaces. To fully use the power of Metasploit, many components are required. In the following section different components of Metasploit architecture is presented. 
+Metasploit architecture is composed of many important components including tools, libraries, modules, and user interfaces. To fully use the power of Metasploit, many components are required. In the following section different components of Metasploit architecture is presented [^2].
+[^2]:(https://techofide.com/blogs/what-is-metasploit-framework-what-is-penetration-testing-how-to-use-metasploit/#Why%20Metasploit%20Framework%20is%20Required?)
+
 ![Metasploit Architecture](images/Archi.png)
+[^6]
+[^6]:(https://www.varonis.com/blog/what-is-metasploit)
 
 ### Tools:
 This is a set of useful command-line utilities
@@ -74,7 +79,8 @@ Exploit modules are prepackaged pieces of code within the database that allow at
 connect. Passive exploits are mostly used with clients such as FTP clients and web browsers.
 
 * **Auxiliary Modules:**
-Unlike exploit modules, auxiliary modules do not require the use of a payload to run. Auxiliary modules allow the framework to be extended for purposes other than exploitation. Auxiliary modules can use the protocol-specific application programme interfaces (APIs) for the Distributed Computing Environment Remote Procedure [DCERPC], HTTP, Server Message Block (SMB), and Sun Remote Procedure Call (RPC) protocols, as well as any Exploit module mixin.
+Unlike exploit modules, auxiliary modules do not require the use of a payload to run. Auxiliary modules allow the framework to be extended for purposes other than exploitation. Auxiliary modules can use the protocol-specific application programme interfaces (APIs) for the Distributed Computing Environment Remote Procedure [DCERPC], HTTP, Server Message Block (SMB), and Sun Remote Procedure Call (RPC) protocols, as well as any Exploit module mixin. [^4]
+[^4]:(https://www.educba.com/metasploit-framework/)
 
 * **Payloads:** Payload contains the set of instructions that will be executed by the victim's machine once it has been compromised. It allows the attacker to control the victim’s machine. A payload can be as simple as a few lines of code or small applications such as the Meterpreter Shell. 
 * **Encoders:** It is used to convert code or information.
@@ -87,7 +93,8 @@ Unlike exploit modules, auxiliary modules do not require the use of a payload to
 In this section we present few ways to attack a remote target. The main purpose of the VMware Workstation is to install Kali linux and Metasploitable 2 as virtual machines. With Kali Linux in Virtual Box, we present several attackes on Metasploitable operating system. Here, We have used MSFconsole for attacking the target machine.
 
 **Metasploitable** is essentially a penetration testing lab in a box, available as a VMware virtual machine (VMX) based on Linux that contains several intentional vulnerabilities for you to exploit. With Metasploit, we can use ready-made or custom code and introduce it into a network to probe for weak spots. 
-With the Metasploit framework installed in a system, an authorized penetration tester can utilize the Metasploit framework's tools to exploit vulnerabilities in a remote system.
+With the Metasploit framework installed in a system, an authorized penetration tester can utilize the Metasploit framework's tools to exploit vulnerabilities in a remote system.[^1]
+[^1]:(https://sourceforge.net/projects/metasploitable/)
 
 First we need to identify the open Network Services on virtual machine using the Nmap Security Scanner. 
 
@@ -136,8 +143,10 @@ Next, 'show options' command is used to see what kind of settings should be conf
 
 ![](images/ftp2_use.JPG)
 
-If we execute the run command, it could be seen that now the shell is open and we have access to the metasploitable operating system. 
+If we execute the run command, it could be seen that now the shell is open and we have access to the metasploitable operating system. [^5]
 ![](images/ftp3_run.JPG)
+
+[^5]:(https://medium.com/cyberdefendersprogram/kali-linux-metasploit-getting-started-with-pen-testing-89d28944097b)
 
 
 

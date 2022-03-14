@@ -91,7 +91,7 @@ With the Metasploit framework installed in a system, an authorized penetration t
 
 First we need to identify the open Network Services on virtual machine using the Nmap Security Scanner. 
 
-![](images/nmap.JPG)
+![](images/nmap.png)
 
 ### Exploiting Apache_Tomcat
 In this part, we try to attack the Apache Tomcat Web server in order to gain administrative’s credentials to gain access to the remote system. 

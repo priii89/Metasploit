@@ -121,17 +121,23 @@ The first thing that we need to is to identify which systems are running the FTP
 
 ![](images/nmap-ftp.jpg)
 
-As it can be seen that a FTP server is running on port 21. 
-VSFTPD stands for very secure FTP daemon. It’s a stable, lightweight and secure FTP server for UNIX-like systems.
-Then we run 
+As it can be seen, a FTP server is running on port 21. 
+VSFTPD stands for very secure FTP daemon. It’s a stable, lightweight and secure FTP server for UNIX-like systems. 
+
+we can use search command in MSF console to see if there is any matching available modules.
 
 
+![](images/search.JPG)
 
 
+One matching module is available. Next, 'use' command should be used which basically lets us use this available module in the MSF console.
+Next, 'show options' command is used to see what kind of settings should be configured in this module. As it can be seen in the image below, RHOST which is our target IP address has to be configured. 
 
 
+![](images/ftp2_use.JPG)
 
-
+If we execute the run command, it could be seen that now the shell is open and we have access to the metasploitable operating system. 
+![](images/ftp3_run.JPG)
 
 
 
